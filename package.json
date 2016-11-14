@@ -1,5 +1,5 @@
 {
-  "author": "hsanjuan",
+  "author": "libp2p",
   "bugs": {
     "url": "https://github.com/libp2p/go-libp2p-consensus"
   },
@@ -11,6 +11,6 @@
   "license": "MIT",
   "name": "go-libp2p-consensus",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
 
