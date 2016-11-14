@@ -1,16 +1,16 @@
 {
-  "author": "libp2p",
+  "author": "hsanjuan",
   "bugs": {
     "url": "https://github.com/libp2p/go-libp2p-consensus"
   },
   "gx": {
-    "dvcsimport": "github.com/hsanjuan/go-libp2p-consensus"
+    "dvcsimport": "github.com/libp2p/go-libp2p-consensus"
   },
   "gxVersion": "0.10.0",
   "language": "go",
   "license": "MIT",
   "name": "go-libp2p-consensus",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
 
