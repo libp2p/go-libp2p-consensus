@@ -27,9 +27,16 @@ type Op interface {
 }
 
 type OpLogConsensus interface {
-	// CommitOp takes the current state and applies the given operation to it, then
-	// sets the new state as the clusters 'current' state.
-	CommitOp(Op) (State, error)
+	// Registers an operation, allowing to use it
+	RegisterOp(opName string, op Op)
+
+	// Unregisters an operation so it can no longer be commited
+	UnregisterOp(opName string, op Op)
+
+	// CommitOp submits an operation to the system. Once the operation
+	// is commited, it is applied to the current state of the system and
+	// the new state is returned.
+	CommitOp(opName string) (State, error)
 
 	SetActor(Actor)
 
