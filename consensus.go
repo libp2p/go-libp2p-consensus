@@ -14,6 +14,15 @@ type Consensus interface {
 	// SetActor sets the underlying actor that will actually be performing the
 	// operations of setting and changing the state.
 	SetActor(Actor)
+
+	// StateConsumer returns a channel that can be used to subscribe to
+	// state updates. Every new agreed-upon state of the system is sent to
+	// this channel.
+	Subscribe() <-chan State
+
+	// Unsubscribe stops sending updates and closes a previously opened
+	// Subscribe() channel. It does nothing if the channel does not exists.
+	Unsubscribe()
 }
 
 type Actor interface {
