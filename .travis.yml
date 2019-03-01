@@ -24,9 +24,9 @@ script:
 
 cache:
   directories:
-    - /Users/raul/go/src/gx
-    - /Users/raul/go/pkg/mod
-    - /Users/raul/.cache/go-build
+    - $GOPATH/src/gx
+    - $GOPATH/pkg/mod
+    - $HOME/.cache/go-build
 
 notifications:
   email: false
