@@ -36,11 +36,10 @@ In a different project just:
 import "github.com/libp2p/go-libp2p-consensus"
 ```
 
-This module is published as a GX dependency. So you can also import in GX with:
-
-```
-> gx import github.com/libp2p/go-libp2p-consensus
-```
+This repo is [gomod](https://github.com/golang/go/wiki/Modules)-compatible, and users of
+go 1.11 and later with modules enabled will automatically pull the latest tagged release
+by referencing this package. Upgrades to future releases can be managed using `go get`,
+or by editing your `go.mod` file as [described by the gomod documentation](https://github.com/golang/go/wiki/Modules#how-to-upgrade-and-downgrade-dependencies).
 
 The code is documented in [godoc.org/github.com/libp2p/go-libp2p-consensus](https://godoc.org/github.com/libp2p/go-libp2p-consensus).
 
