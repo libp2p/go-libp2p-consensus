@@ -1,3 +1,4 @@
 module github.com/libp2p/go-libp2p-consensus
 
-go 1.20
+go 1.21
+
